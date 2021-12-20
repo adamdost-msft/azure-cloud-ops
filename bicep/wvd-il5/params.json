@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourcePrefix": {
+            "value": "AZ-WVD"
+        },
+        "addressSpace": {
+            "value": "10.0.0.0/24"
+        },
+        "location": {
+            "value": "usgovvirginia"
+        },
+        "locationShortName": {
+            "value": "ASH"
+        },
+        "subnetArray": {
+            "value": [
+                {
+                    "name": "SVC-SNT",
+                    "addressPrefix": "10.0.0.0/27"
+                },
+                {
+                    "name": "DMZ-SNT",
+                    "addressPrefix": "10.0.0.32/27"
+                },
+                {
+                    "name": "APP-SNT",
+                    "addressPrefix": "10.0.0.64/27"
+                }
+            ]
+        },
+        "hostPoolToken": {
+            "value": "eyJhbGciOiJSUzI1NiIsImtpZCI6IjEyNzlCMEU5MUEyQjE0RjIyOUMzQUJBN0MxQzQ0MzI0MEU3RjU1NzIiLCJ0eXAiOiJKV1QifQ.eyJSZWdpc3RyYXRpb25JZCI6IjE1ZDY5ZDIzLTA2MzktNGViMC04ZjMzLTZkNDMyNDVlODFjYSIsIkJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXItZy11c2ctcjEud3ZkLmF6dXJlLnVzLyIsIkRpYWdub3N0aWNzVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctdXNnLXIxLnd2ZC5henVyZS51cy8iLCJFbmRwb2ludFBvb2xJZCI6IjJjNTk1MDc0LTk5NTUtNDQ1Ni05NTAwLWRhM2Q3MDRiODk3NSIsIkdsb2JhbEJyb2tlclVyaSI6Imh0dHBzOi8vcmRicm9rZXIud3ZkLmF6dXJlLnVzLyIsIkdlb2dyYXBoeSI6IlVTRyIsIkdsb2JhbEJyb2tlclJlc291cmNlSWRVcmkiOiJodHRwczovL3JkYnJva2VyLnd2ZC5henVyZS51cy8iLCJCcm9rZXJSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly9yZGJyb2tlci1nLXVzZy1yMS53dmQuYXp1cmUudXMvIiwiRGlhZ25vc3RpY3NSZXNvdXJjZUlkVXJpIjoiaHR0cHM6Ly9yZGRpYWdub3N0aWNzLWctdXNnLXIxLnd2ZC5henVyZS51cy8iLCJuYmYiOjE2Mzk5NzM4NDYsImV4cCI6MTY0MDk5NTIwMCwiaXNzIjoiUkRJbmZyYVRva2VuTWFuYWdlciIsImF1ZCI6IlJEbWkifQ.Rp-MrTjGuDstgONaiPtqM0EJPHooh9QepMylMLWhEFoHICr-JTwWQavJoLxfZVh3mOIFyEFy_gd3XZl505DLEGZACV-jUsfjpgzEh0aIiE8EOMjU5vOcejQpglzR2PSF-3S9mVd3xy0h_kUs0ESLdta7ui3N_kcP-6z-f28fNmLV06qtCPOOqLNF5KvKPDZpkvuy0Ob3VEPooFBhW8wMiF7pKhLTysSRHZCXlnNAATIDSk37Pwf554ix1K4SZQLv_pFsimg1kWA3R0PUkNy6-pv92wkLKyedzy-3ozT_-q-mxF8nlo9pB-SLPFbFacGhV3dLVRCNAeGE495K0STFoQ"
+        },
+        "nicArray": {
+            "value": [
+                {
+                    "name": "AVD-NIC-01",
+                    "privateIP": "10.0.0.10"
+                },
+                {
+                    "name": "AVD-NIC-02",
+                    "privateIP": "10.0.0.11"
+                },
+                {
+                    "name": "AVD-NIC-03",
+                    "privateIP": "10.0.0.12"
+                }
+            ]
+        },
+        "objId": {
+            "value": "63c0cb60-77ee-481c-a970-18125482412f"
+        },
+        "vmUserName": {
+            "value": "ccevmadmin"
+        },
+        "vmPassword": {
+            "value": "1qaz!QAZ1qaz!QAZ"
+        }
+    }
+}

@@ -36,3 +36,6 @@ Gemfile.lock
 # myAppPage
 app_config.py
 __pycache__
+
+# json param file
+params.json
